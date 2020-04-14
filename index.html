@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Tarzan</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Just+Another+Hand|Pacifico" rel="stylesheet">
+    </head>
+    <body>
+        <section id="title">
+            <p><span class="name">Tarzan</span> of the Apes</p>
+        </section>
+        <nav id="navigationBar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="characters.html">Character</a></li>
+                <li><a href="animals.html">Animals</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <section id="primary">
+            <div id="main">
+                <section id="part-of-story-form">
+                    <h2>Become Part of the Story!</h2>
+                    <form method="get" action="index.html">
+                        <fieldset>
+                            <legend>
+                                What is your name?
+                            </legend>   
+                            <input type="text" name="name" id="form-name" placeholder="First name only" />
+
+                            <p>Your name will replace Tarzan in the story when you submit this form!</p>
+                        </fieldset>
+                        <fieldset>
+                            <button type="submit" value="submit">Submit</button>
+                            <a href="#">Skip</a>
+                        </fieldset>
+                    </form>
+                </section>
+                <section id="instructions">
+                    <h1>Instructions</h1>
+                    <p>Click on <span id="red">red</span></p>
+                    <p>Mouse over <span id="green">green</span></p>
+                    <p>Complete minigame to unlock the rest of the chapter</p>
+                    <a id="instructions-ok" href="#">Got it!</a>
+                </section>
+                <a id="start" href="chap1.html">Read Story of <span class="name">Tarzan</span></a>
+            </div>
+            <aside id="chapterSelection">
+                <p>Chapter Selection</p>
+                <ul>
+                    <li><a href="chap1.html">Chapter 1</a></li>
+                    <li><a href="chap2.html">Chapter 2</a></li>
+                    <li><a href="chap3.html">Chapter 3</a></li>
+                    <li><a href="chap4.html">Chapter 4</a></li>
+                    <li><a href="chap5.html">Chapter 5</a></li>
+                    <li><a href="chap6.html">Chapter 6</a></li>
+                </ul>
+            </aside>
+        </section>
+        <script src="js/jquery-3.4.0.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

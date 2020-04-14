@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Tarzan</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Just+Another+Hand|Pacifico" rel="stylesheet">
+    </head>
+    <body>
+        <section id="title">
+            <p><span class="name">Tarzan</span> of the Apes</p>
+        </section>
+        <nav id="navigationBar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="animals.html">Animals</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <section id="primary">
+            <div id="main">
+                <div class="previous">
+                    <a id="previous-chapter" href="chap1.html"><</a>
+                </div>
+                <div class="content">
+                    <h1 class="content-header"> Chapter 2 </h1>
+                    <img class="content-image-left" src="images/kerchak.jpg" alt="kerchak">
+                    <p>
+                        Kerchak, a hulking male gorilla and the 
+                        <a id="silverback" class="click-popup" href="#">leader of the ape </a>
+                        tribe that harassed the Claytons for the past year, is in a mad rage. He lashes out at his fellow gorillas, killing one of them, and then chases Kala, a nine-year-old female ape who is oblivious to his ire until it's too late.
+                        
+                    </p>
+                    <p>
+                        <a id="show-event" href="#show-event" >Click to help Kala get away</a>
+                    </p>
+                    <p class="after-event">
+                        She jumps out of his reach, but her 
+                        <a id="baby-ape" class="mouseover">baby ape </a>
+                        , losing its grip on her fur, falls to its death 30 feet below. Kerchak's fury disappears and he leads the tribe to the Claytons' cabin so he can try to learn more about the big black stick that makes noises and kills inhabitants of the jungle. Kala gathers her baby's broken body into her arms and refuses to let go.
+                    </p>
+                    <img class="after-event" class="content-image-full" src="images/kala.jpg" alt="kala">
+                    <p class="after-event">
+                        The door to the cabin is ajar when they arrive. They sneak in, afraid of waking "the little black stick." The "strange white ape" is lying across the table with his head on his arm and a baby is crying in the cradle. John Clayton wakes just before Kerchak attacks and kills John. Kerchak then turns his attention to the cradle, but Kala snatches the baby from under his hands, trading her dead baby for the live one. She scurries into a tree and 
+                        <a id="breastfeeding" class="mouseover">feeds the baby from her breast. </a>
+                    </p>
+                    <img class="after-event" class="content-image-full" src="images/baby.jpg" alt="baby">
+                    <p class="after-event">
+                        The apes go back into the forest after Kerchak examined the “black stick”. Kala joins them but doesn't let anyone else touch her new baby, who seems much frailer and more delicate than the other ape children. She grips him tightly, unwilling to lose another child.
+                    </p>
+                </div>
+                <div class="next">
+                    <a id="next-chapter" href="chap3.html">></a>
+                </div>
+            </div>
+            <div id="silverback-popup" class="popup">
+                <div class="content">
+                    <nav class="close-button">
+                        <a href="#">X</a>
+                    </nav>
+                    <h1 class="content-header"> Silverback </h1>
+                    <section id="image-and-audio">
+                        <img class="content-image-left" src="images/silverback.jpg" alt="silverback">
+                        <section class="audio">
+                            <nav class="player-controls">
+                                <a href="audio/silverback.mp3">Play sound!</a>
+                                <a href="audio/silverback.mp3">Pause</a>
+                            </nav>
+                            <audio controls>
+                                <source src="audios/silverback.mp3" type="audio/mpeg">
+                            </audio>
+                        </section>
+                    </section>
+                    <p>Gorilla pack is led by one dominant, older adult male, often called a silverback because of the swath of silver hair that adorns his otherwise dark fur</p>
+                    <p>The average weight of silverback gorilla is 270 kg (600 lb) capable to reach a weight of 275kg (606 lb).</p>
+                    <p>Silverback gorilla can lift a weight up to 815kg (1800 lb) while a well trained human can lift weight up to 410 kg.</p>
+                    <p>Silverback gorillas exhibits incredible strength when they break bamboo canes, almost 20 times stronger than that of the average human. First they bite the bamboo, which weakens it and then break it by hands.</p>
+                </div>
+            </div>
+            <div id="event-window" class="popup">
+                <div class="event">
+                    <nav class="close-button">
+                        <a href="#">X</a>
+                    </nav>
+                    <h1 class="content-header"> Help Kala run away from Kerchak </h1>
+                    <p> Repeatedly press A -> S -> D </p>
+                    <div id="myProgress">
+                        <div id="myBar"></div>
+                    </div>
+                    <button id="skip-button" onclick="skip_event()">Skip</button> 
+                </div>
+            </div>
+            <aside id="chapterSelection">
+                <p>Chapter Selection</p>
+                <ul>
+                    <li><a href="chap1.html">Chapter 1</a></li>
+                    <li><a href="chap2.html">Chapter 2</a></li>
+                    <li><a href="chap3.html">Chapter 3</a></li>
+                    <li><a href="chap4.html">Chapter 4</a></li>
+                    <li><a href="chap5.html">Chapter 5</a></li>
+                    <li><a href="chap6.html">Chapter 6</a></li>
+                </ul>
+            </aside>
+            <div id="baby-ape-tooltip" class="mouseover-popup">
+                <img src="images/babyape.jpg" alt="babyape">
+                <p>Gorilla infants are helpless at birth and weigh about 3-4 lbs. They learn to crawl at about 2 months and are walking by the time they are around 8 or 9 months. </p>
+            </div>
+            <div id="breastfeeding-tooltip" class="mouseover-popup">
+                <img src="images/breastfeeding.jpg" alt="breastfeeding">
+                <p>Mother gorillas nurse their babies for about 3 years, following which the young become more independent.</p>
+            </div>
+        </section>
+        <script src="js/jquery-3.4.0.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

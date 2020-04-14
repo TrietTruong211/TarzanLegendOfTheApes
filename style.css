@@ -1,0 +1,596 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(/img/jungle.jpg);
+}
+
+/* title */
+
+#title {
+    height: 80px;
+    border-style: solid;
+    border-width: 2px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 4em;
+    background-color: #C08552;
+    color: #3C1F17;
+    font-family: 'Just Another Hand', cursive;
+}
+
+#title p{
+    text-align: center;
+}
+
+/* navigation bar */
+#navigationBar {
+    border-style: solid;
+    border-width: 2px;
+    height: 50px;
+    margin: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 3em;
+    text-align: center;
+    background-color: #C08552;
+}
+
+#navigationBar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Just Another Hand', cursive;
+    color: #5E3023;
+}
+
+#navigationBar a {
+    color: #5E3023;
+    text-decoration: none;
+    display: block;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 40px;
+    line-height: 50px;
+}
+
+#navigationBar a:link {
+    text-decoration: none;
+}
+
+#navigationBar a:visited {
+    text-decoration: none;
+}
+
+#navigationBar a:hover {
+    text-decoration: none;
+    background: #5E3023;
+    color: white;
+}
+
+#navigationBar a:active {
+    text-decoration: none;
+    background: #AE723E;
+    color: #3C1F17;
+}
+
+/* primary part of website */
+#primary {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+/* main part inside primary */
+#main {
+    width: 80%;
+    border-style: solid;
+    border-width: 2px;
+    background-color: #C08552;
+    font-family: 'Just Another Hand', cursive;
+    font-size: 1.2em;
+    text-align: center;
+    position: relative;
+    display: flex;
+    min-height: 540px;
+}
+
+/* aside chapter selection */
+#chapterSelection {
+    width: 20%;
+    border-style: solid;
+    border-width: 2px;
+    margin-left: 20px;
+    font-size: 2em;
+    height: 350px;
+    text-align: center;
+    background-color: #C08552;
+    font-family: 'Just Another Hand', cursive;
+    /* position: fixed;
+    right: 40px; */
+}
+
+#chapterSelection p {
+    font-size: 1.5em;
+    color: #3C1F17;
+    
+}
+
+#chapterSelection a {
+    text-decoration: none;
+    color: #5E3023;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+}
+
+#chapterSelection a:link {
+    text-decoration: none;
+}
+
+#chapterSelection a:visited {
+    text-decoration: none;
+}
+
+#chapterSelection a:hover {
+    text-decoration: none;
+    background: #5E3023;
+    color: white;
+}
+
+#chapterSelection a:active {
+    text-decoration: none;
+    background: #AE723E;
+    color: #3C1F17;
+}
+
+/* common stuff */
+ul {
+    list-style-type: none;
+    color: #5E3023
+}
+
+a {
+    text-decoration: none;
+    color: rebeccapurple;
+}
+/* start button (start reading) */
+#start {
+    color: #3C1F17;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    background-color: white;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    visibility: hidden;
+}
+
+#start:hover {
+    background-color: #5E3023;
+    color: white;
+}
+
+/* previous and next page buttons */
+.previous, .next{
+    position: relative;
+    width: 10%;
+}
+
+.previous a, .next a {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: black;
+    font-size: 2.5em;
+    background-color: white;
+    border-radius: 100%;
+    
+}
+
+/* content */
+.content {
+    width: 80%;
+    font-size: 1.5em;
+    padding-bottom: 20px;
+}
+
+.content-header {
+    font-size: 2.5em;
+    color: #3C1F17;
+    margin: 20px;
+}
+
+.content-image-left {
+    width: 400px;
+    float: left;
+    margin: 20px;
+    max-height: 400px;
+}
+
+.content-image-right {
+    width: 400px;
+    float: right;
+    margin: 20px;
+}
+
+.content-image-full {
+    width: 95%;
+    float: center;
+    margin: 20px;
+}
+
+.content p {
+    color: white;
+    margin: 20px;
+}
+
+/* popup */
+
+.popup {
+    font-family: 'Just Another Hand', cursive;
+    font-size: 1.5em;
+    position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.75);
+	width: 100%;
+	height: 100%;
+    transition: all 0.5s ease; 
+	visibility: hidden;
+	/* opacity: 0; */
+}
+
+.popup .content, .popup .event {
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: #AE723E;
+	position: relative;
+    width: 70%;
+    height: 70%;
+    border-radius: 40px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 15px;
+    overflow: auto;
+}
+
+.popup h1 {
+    text-align: center;
+}
+
+.close-button {
+    text-align: right;
+    margin-right: 10px;
+}
+
+/* audio */
+#audio {
+    margin: 10px;
+    width: 250px;
+}
+
+#audio audio {
+    visibility: hidden;
+    height: 0;
+}
+
+#audio .player-controls{
+    display: block;
+    float: left;
+}
+#audio .player-controls a {  
+    display: block;
+    background-color: #5E3023;
+    width: 250px;
+    height: 50px;
+    line-height: 60px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    border: 2px solid black;
+}
+
+#audio .player-controls a:last-child {
+	display: none;
+	background-color: #5E3023;
+	animation-name: pulse;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+#audio .player-controls a:hover {
+	background-color: #3C1F17;
+}
+
+#audio .player-controls.playing a:first-child {
+	display: none;
+}
+
+#audio .player-controls.playing a:last-child {
+	display: block;
+}
+
+/* image & audio */
+#image-and-audio {
+    float: left;
+    margin-right: 10px;
+}
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #AE723E; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #5E3023; 
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #5E3023; 
+}
+
+/* navigation pages for characters and animals */
+.half-half {
+    width: 50%;
+    font-size: 3em;
+    background-size: cover;
+    margin: 2px;
+}
+
+.half-half-item {
+    text-decoration: none;
+    background: rgba(255,255,255,0.4);
+    position: relative;
+    display: block;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* animals */
+#carnivore {
+    background-image: url("/img/leopard\ 1.jpg");
+}
+
+#herbivore {
+    background-image: url("/img/monkey.jpg");
+}
+
+#carnivore a{
+    color: red;
+    
+}
+
+#herbivore a{
+    color: green;  
+}
+
+/* characters */
+#characters-human {
+    background-image: url("/img/characters-human.jpg");
+}
+
+#characters-animal {
+    background-image: url("/img/characters-animal.jpg");
+}
+
+#characters-human a {
+    color: #5E3023;
+}
+
+#characters-animal a {
+    color: #5E3023;
+}
+
+/* content-list for carnivore and herbivore */
+.content-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    font-size: 2em;
+}
+
+.content-list-item {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.content-list-item img {
+    width: 250px;
+    height: 250px;
+}
+
+.content-list-item a {
+    color: #3C1F17; 
+}
+
+/* Part of story */
+#part-of-story-form {
+    margin: auto;
+    font-size: 2em;
+    color: white;
+    
+}
+
+#part-of-story-form h2 {
+    color: #3C1F17;
+}
+
+#part-of-story-form fieldset {
+    border: 0px;
+}
+
+#part-of-story-form legend {
+    color: #5E3023;
+}
+
+#part-of-story-form input {
+    background-color: #5E3023;
+    border: black ;
+    color: white;
+    font-size: 1em;
+    font-family: 'Just Another Hand', cursive;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#part-of-story-form button, #part-of-story-form a {
+    color: #3C1F17;
+    background-color: #AE723E;
+    border: black;
+    font-family: 'Just Another Hand', cursive;
+    font-size: 1em;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+#part-of-story-form button:hover, #part-of-story-form a:hover {
+    color: white;
+    background-color: #5E3023;
+}
+
+/* form input field */
+#form-name.error{
+    border-color: red;
+    border: 5px;
+}
+
+#form-name:focus {
+    border-color: red; 
+    border: 5px;
+}
+
+/* event */
+.event {
+    width: 80%;
+    font-size: 1.5em;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.event p {
+    color: white;
+}
+
+/* progress bar */
+#myProgress {
+    width: 80%;
+    background-color:#C08552;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+  
+#myBar {
+    width: 1%;
+    height: 30px;
+    background-color: #5E3023;
+}
+
+/* after event content */
+.after-event {
+    visibility: hidden;
+}
+
+/* skip-botton */
+#skip-button {
+    color: #3C1F17;
+    background-color: #C08552;
+    border: black;
+    font-family: 'Just Another Hand', cursive;
+    font-size: 1em;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+#skip-button:hover {
+    color: white;
+    background-color: #5E3023;
+}
+
+/* tooltip */
+.tooltip {
+    position: fixed;
+    right: -510px;
+    background: #AE723E;
+    width: 500px;
+    height: 300px;
+    border: 2px solid;
+    border-radius: 20px;
+    animation-name: none;
+    animation-duration: 2s;
+    text-align: center;
+}
+
+.tooltip p {
+    margin: 20px;
+    color: white;
+    font-family: 'Just Another Hand', cursive;
+    font-size: 2em;
+}
+
+.tooltip img {
+    height: 200px;
+    float: left;
+    margin: 10px;
+}
+
+/* animation for tooltip */
+@keyframes slide-in {
+	from {
+		right: -500px;
+	}
+	to {
+		right: 0px;
+	}
+}
+
+@keyframes slide-out {
+	from {
+		right: 0px;
+	}
+	to {
+		right: -500px;
+	}
+}
+
+/* iframe in tooltip */
+.tooltip iframe {
+    margin: auto;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Tarzan</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Just+Another+Hand|Pacifico" rel="stylesheet">
+    </head>
+    <body>
+        <section id="title">
+            <p><span class="name">Tarzan</span> of the Apes</p>
+        </section>
+        <nav id="navigationBar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="animals.html">Animals</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <section id="primary">
+            <div id="main">
+                <div class="previous">
+                    <a id="previous-chapter" href="chap2.html"><</a>
+                </div>
+                <div class="content">
+                    <h1 class="content-header"> Chapter 3 </h1>
+                    <img class="content-image-left" src="images/young-ape.jpg" alt="young-ape">
+                    <p>
+                        <span class="name">Tarzan</span> 
+                        doesn't grow the way the other ape children do. He is smaller and weaker than the other 
+                        <a id="infants" class="mouseover">infants </a>
+                        in the tribe. His foster father, Tublat, wants Kala to abandon him so they can produce stronger, most useful children, but Kala refuses. The helpless white baby grows into a strong and resourceful 10-year-old who is just as comfortable 
+                        <a id="swinging" class="mouseover-video">swinging between the trees  </a>
+                        as his primate cousins.
+                    </p>
+                    <p>
+                        It's around this time 
+                        <span class="name">Tarzan</span> 
+                        and his "cousin," a young male ape, venture to the lake. 
+                        <span class="name">Tarzan</span> 
+                        is distressed by his reflection in the deep waters. He feels ugly compared to his broad-nosed, hairy cousin. He's so busy cataloging his small mouth, blunt teeth, and hairless body that he doesn't hear Sabor, the 
+                        <a id="lion" class="click-popup" href="#">lioness </a>
+                        , preparing to pounce. She lets out a wild 
+                        <a id="roar" class="mouseover">roar </a>
+                        and 
+                        <a id="leap" class="mouseover">leaps </a>
+                        into the air. 
+                    </p>
+                    <img class="content-image-center" src="images/lion-attack.jpg" alt="lion-attack">
+                    <p><a id="show-event" href="#show-event" >Click to help <span class="name">Tarzan</span> escape</a></p>
+                    <p class="after-event">
+                        <span class="name">Tarzan</span> 
+                        throws himself into the water, but his cousin's reflexes aren't so fast. He becomes lunch. 
+                        <span class="name">Tarzan</span> 
+                        calls the rest of the apes from his watery hideout and Sabor slinks away.
+                    </p>
+                    <p class="after-event">
+                        Kerchak's tribe is always 
+                        <a id="move" class="mouseover">on the move in search of food, safety, and good weather. </a> 
+                        <span class="name">Tarzan</span>  
+                        sleeps in Kala's arms no matter where they stop for the night, giving "the great, hairy beast all the affection that would have belonged to his fair young mother had she lived.
+                    </p>
+                    <p class="after-event">
+                        Kerchak's band of apes often hunts and rests near the Claytons' sealed cabin. The apes never venture close to the cabin—the story of the "thunder-stick" is still popular among the tribe—but the building is a constant source of wonder for 
+                        <span class="name">Tarzan</span>
+                        , who spends hours trying to figure out how to get inside. 
+                    </p>
+                </div>
+                <div class="next">
+                    <a id="next-chapter" href="chap4.html">></a>
+                </div>
+            </div>
+            <div id="lion-popup" class="popup">
+                <div class="content" id="lion-popup-content">
+                    <nav class="close-button">
+                        <a href="#">X</a>
+                    </nav>
+                    <h1 class="content-header"> Lion </h1>
+                    <section id="image-and-audio">
+                        <img class="content-image-left" src="images/lioness.jpg" alt="lioness">
+                        <section class="audio">
+                            <nav class="player-controls">
+                                <a href="audio/lion.mp3">Play sound!</a>
+                                <a href="audio/lion.mp3">Pause</a>
+                            </nav>
+                
+                            <audio controls>
+                                <source src="audios/lion.mp3" type="audio/mpeg">
+                            </audio>
+                        </section>
+                    </section>
+                    <p>COMMON NAME: African Lion</p>
+                    <p>SCIENTIFIC NAME: Panthera leo</p>
+                    <p>TYPE: Mammals</p>
+                    <p>DIET: Carnivore</p>
+                    <p>GROUP NAME: Pride</p>
+                    <p>SIZE: Head and body: 4.5 to 6.5 feet; tail: 26.25 to 39.5 inches</p>
+                    <p>WEIGHT: 265 to 420 pounds</p>
+                    <p>
+                        Lions are the only cats that live in groups, which are called prides. Prides are family units that may include up to three males, a dozen or so females, and their young. All of a pride's lionesses are related, and female cubs typically stay with the group as they age. Young males eventually leave and establish their own prides by taking over a group headed by another male.
+                    </p>
+                </div>
+            </div>
+            <div id="event-window" class="popup">
+                <div class="event">
+                    <nav class="close-button">
+                        <a href="#">X</a>
+                    </nav>
+                    <h1 class="content-header"> Help <span class="name">Tarzan</span> dodge the lion's attack </h1>
+                    <p> Repeatedly press A and D</p>
+                    <div id="myProgress">
+                        <div id="myBar"></div>
+                    </div>
+                    <button id="skip-button" onclick="skip_event()">Skip</button> 
+                </div>
+            </div>
+            <aside id="chapterSelection">
+                <p>Chapter Selection</p>
+                <ul>
+                    <li><a href="chap1.html">Chapter 1</a></li>
+                    <li><a href="chap2.html">Chapter 2</a></li>
+                    <li><a href="chap3.html">Chapter 3</a></li>
+                    <li><a href="chap4.html">Chapter 4</a></li>
+                    <li><a href="chap5.html">Chapter 5</a></li>
+                    <li><a href="chap6.html">Chapter 6</a></li>
+                </ul>
+            </aside>
+            <div id="infants-tooltip" class="mouseover-popup">
+                <img src="images/infants.jpg" alt="infants">
+                <p>Unlike other animals, apes take care of their young for many years. Apes also take much longer to mature than other animals. Some apes can take as long as 12 to 18 years to fully develop into an adult.</p>
+            </div>
+            <div id="swinging-tooltip" class="mouseover-popup">
+                <nav class="close-button">
+                    <a id="swinging" href="#">X</a>
+                </nav>
+                <iframe id="video" src="https://www.youtube.com/embed/ycTASqDfDkM" height="200" width="300" allowfullscreen="allowfullscreen"></iframe>
+                <p> Apes are extremely mobile and can swing from tree to tree.</p>
+            </div>
+            <div id="roar-tooltip" class="mouseover-popup">
+                <img src="images/roar.jpg" alt="roar">
+                <p>A male lion's roar can be heard from up to five miles away – the loudest roar of any big cat species. Their roar helps them find other lions as well as to proclaim their territory. </p>
+            </div>
+            <div id="leap-tooltip" class="mouseover-popup">
+                <img src="images/leap.jpg" alt="leap">
+                <p>Lions can leap as far as 36 feet (11 m).</p>
+            </div>
+            <div id="move-tooltip" class="mouseover-popup">
+                <img src="images/move.jpg" alt="on the move">
+                <p>The leader organizes troop activities like eating, nesting in leaves, and moving about the group's 0.75-to-16-square-mile home range.</p>
+            </div>
+        </section>
+        <script src="js/jquery-3.4.0.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
